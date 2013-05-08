@@ -1,14 +1,5 @@
 if (Meteor.isClient) {
-  Template.hello.greeting = function () {
-    return Session.get('texto') || "Olá Mundo";
-  };
-
-  Template.hello.events({
-    'click input' : function () {
-      // template data, if any, is available in 'this'
-      Session.set('texto', 'Clicou!');
-    }
-  });
+  Template.hello.quadrado = {x: 200, y: 50}
 }
 
 if (Meteor.isServer) {
