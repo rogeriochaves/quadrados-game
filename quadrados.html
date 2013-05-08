@@ -14,4 +14,7 @@
 
 <template name="quadrado">
 	<div class="quadrado" style="left:{{ x }}px; top:{{ y }}px"></div>
+	{{#if tiro}}
+		<div class="tiro" style="left:{{ tiro.x }}px; top:{{ tiro.y }}px"></div>
+	{{/if}}
 </template>
