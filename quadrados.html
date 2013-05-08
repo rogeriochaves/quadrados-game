@@ -3,9 +3,15 @@
 </head>
 
 <body>
-  {{> hello}}
+  {{> quadrados}}
 </body>
 
-<template name="hello">
-  <div class="quadrado" style="left:{{ quadrado.x }}px; top:{{ quadrado.y }}px"></div>
+<template name="quadrados">
+  	{{#each quadrados}}
+    	{{> quadrado}}
+    {{/each}}
+</template>
+
+<template name="quadrado">
+	<div class="quadrado" style="left:{{ x }}px; top:{{ y }}px"></div>
 </template>
